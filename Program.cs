@@ -10,7 +10,6 @@ namespace blackjack
       var suits = new List<string> { "clubs", "hearts", "diamonds", "spades" };
       var rank = new List<string> { "2", "3", "4", "5", "6", "7", "8", "9", "10", "jack", "queen", "king", "ace" };
       var deck = new List<card>();
-
       for (var i = 0; i < suits.Count; i++)
       {
         for (var j = 0; j < rank.Count; j++)
@@ -67,7 +66,6 @@ namespace blackjack
           dealerTotal += dealerHand[i].GetValue();
         }
         Console.WriteLine($"player total is {playerTotal}");
-        Console.WriteLine($"dealer score is {dealerTotal}");
         if (playerTotal < 21)
         {
           Console.WriteLine("would you like to (HIT) or(QUIT)?");
